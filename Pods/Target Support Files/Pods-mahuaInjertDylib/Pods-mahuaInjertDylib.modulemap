@@ -1,0 +1,6 @@
+framework module Pods_mahuaInjertDylib {
+  umbrella header "Pods-mahuaInjertDylib-umbrella.h"
+
+  export *
+  module * { export * }
+}

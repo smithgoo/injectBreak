@@ -1,0 +1,327 @@
+[{
+    "A":[
+         "93,9,Afghanistan",
+         "358,6,Åland Islands",
+         "355,9,Albania",
+         "213,9,Algeria",
+         "1684,7,American Samoa",
+         "376,6,Andorra",
+         "244,9,Angola",
+         "1264,7,Anguilla",
+         "1268,7,Antigua & Barbuda",
+         "54,6,Argentina",
+         "374,8,Armenia",
+         "297,7,Aruba",
+         "61,9,Australia",
+         "43,10,Austria",
+         "994,9,Azerbaijan"
+         ]
+},
+{
+    "B":[
+         "1242,7,Bahamas",
+         "973,8,Bahrain",
+         "880,9,Bangladesh",
+         "1246,7,Barbados",
+         "375,9,Belarus",
+         "32,9,Belgium",
+         "501,7,Belize",
+         "229,8,Benin",
+         "1441,7,Bermuda",
+         "975,8,Bhutan",
+         "591,8,Bolivia",
+         "387,8,Bosnia & Herzegovina",
+         "267,8,Botswana",
+         "55,11,Brazil",
+         "673,7,Brunei Darussalam",
+         "359,9,Bulgaria",
+         "226,8,Burkina Faso",
+         "257,8,Burundi"
+         ]
+},
+{
+    "C":[
+         "855,9,Cambodia",
+         "237,8,Cameroon",
+         "1,10,Canada",
+         "238,7,Cape Verde",
+         "1345,7,Cayman Islands",
+         "236,8,Central African Rep.",
+         "235,8,Chad",
+         "56,9,Chile",
+         "86,11,China",
+         "57,10,Colombia",
+         "269,7,Comoros",
+         "243,9,Congo",
+         "242,9,Congo",
+         "682,5,Cook Islands",
+         "506,8,Costa Rica",
+         "225,8,Côte D'Ivoire",
+         "385,9,Croatia",
+         "53,8,Cuba",
+         "357,8,Cyprus",
+         "420,9,Czech Republic"
+         ]
+},
+{
+    "D":[
+         "45,8,Denmark",
+         "253,8,Djibouti",
+         "1767,7,Dominica",
+         "1,10,Dominican Republic"
+         ]
+},
+{
+    "E":[
+         "593,9,Ecuador",
+         "20,10,Egypt",
+         "503,8,El Salvador",
+         "240,9,Equatorial Guinea",
+         "291,7,Eritrea",
+         "372,8,Estonia",
+         "251,9,Ethiopia"
+         ]
+},
+{
+    "F":[
+         "500,5,Falkland Islands (Malvinas)",
+         "298,6,Faroe Islands",
+         "679,7,Fiji",
+         "358,10,Finland",
+         "33,9,France",
+         "594,9,French Guiana",
+         "689,6,French Polynesia"
+         ]
+},
+{
+    "G":[
+         "241,8,Gabon",
+         "220,7,Gambia",
+         "995,9,Georgia",
+         "49,11,Germany",
+         "233,9,Ghana",
+         "350,8,Gibraltar",
+         "30,10,Greece",
+         "299,6,Greenland",
+         "1473,7,Grenada",
+         "590,9,Guadeloupe",
+         "1671,7,Guam",
+         "502,8,Guatemala",
+         "245,7,Guinea-Bissau",
+         "224,8,Guinea",
+         "592,7,Guyana"
+         ]
+},
+{
+    "H":[
+         "509,8,Haiti",
+         "504,8,Honduras",
+         "852,8,Hong Kong",
+         "36,9,Hungary"
+         ]
+},
+{
+    "I":[
+         "354,7,Iceland",
+         "91,10,India",
+         "62,9,Indonesia",
+         "98,10,Iran",
+         "964,10,Iraq",
+         "353,9,Ireland",
+         "972,9,Israel",
+         "39,10,Italy"
+         ]
+},
+{
+    "J":[
+         "1876,7,Jamaica",
+         "81,10,Japan",
+         "962,9,Jordan"
+         ]
+},
+{
+    "K":[
+         "7,10,Kazakhstan",
+         "254,9,Kenya",
+         "686,5,Kiribati",
+         "82,10,Korea",
+         "965,8,Kuwait",
+         "996,9,Kyrgyzstan"
+         ]
+},
+{
+    "L":[
+         "856,10,Lao People's Democratic Rep.",
+         "371,8,Latvia",
+         "961,8,Lebanon",
+         "266,8,Lesotho",
+         "231,8,Liberia",
+         "218,9,Libyan Arab Jamahiriya",
+         "423,7,Liechtenstein",
+         "370,8,Lithuania",
+         "352,9,Luxembourg"
+         ]
+},
+{
+    "M":[
+         "853,8,Macao",
+         "389,8,Macedonia",
+         "261,9,Madagascar",
+         "265,9,Malawi",
+         "60,10,Malaysia",
+         "960,7,Maldives",
+         "223,8,Mali",
+         "356,8,Malta",
+         "692,7,Marshall Islands",
+         "596,9,Martinique",
+         "222,8,Mauritania",
+         "230,7,Mauritius",
+         "269,9,Mayotte",
+         "52,11,Mexico",
+         "691,7,Micronesia",
+         "373,8,Moldova",
+         "377,9,Monaco",
+         "976,8,Mongolia",
+         "382,8,Montenegro",
+         "1664,7,Montserrat",
+         "212,9,Morocco",
+         "258,9,Mozambique",
+         "95,8,Myanmar"
+         ]
+},
+{
+    "N":[
+         "264,9,Namibia",
+         "674,7,Nauru",
+         "977,10,Nepal",
+         "31,9,Netherlands",
+         "687,6,New Caledonia",
+         "64,8,New Zealand",
+         "505,8,Nicaragua",
+         "227,8,Niger",
+         "234,10,Nigeria",
+         "683,4,Niue",
+         "672,5,Norfolk Island",
+         "1670,7,Northern Mariana Islands",
+         "47,8,Norway"
+         ]
+},
+{
+    "O":[
+         "968,8,Oman"
+         ]
+},
+{
+    "P":[
+         "92,10,Pakistan",
+         "680,7,Palau",
+         "970,9,Palestinian",
+         "507,8,Panama",
+         "675,8,Papua New Guinea",
+         "595,9,Paraguay",
+         "51,9,Peru",
+         "63,10,Philippines",
+         "48,9,Poland",
+         "351,9,Portugal",
+         "1,10,Puerto Rico"
+         ]
+},
+{
+    "Q":[
+         "974,8,Qatar"
+         ]
+},
+{
+    "R":[
+         "262,9,Réunion",
+         "40,9,Romania",
+         "7,10,Russian Federation",
+         "250,9,Rwanda"
+         ]
+},
+{
+    "S":[
+         "290,4,Saint Helena",
+         "1869,7,Saint Kitts & Nevis",
+         "1758,7,Saint Lucia",
+         "508,6,Saint Pierre & Miquelon",
+         "1784,7,Saint Vincent & The Grenedines",
+         "685,7,Samoa",
+         "378,10,San Marino",
+         "239,7,Sao Tome & Principe",
+         "966,9,Saudi Arabia",
+         "221,9,Senegal",
+         "381,9,Serbia",
+         "248,7,Seychelles",
+         "232,8,Sierra Leone",
+         "65,8,Singapore",
+         "1721,7,Sint Maarten",
+         "421,9,Slovakia",
+         "386,8,Slovenia",
+         "677,7,Solomon Islands",
+         "252,8,Somalia",
+         "27,9,South Africa",
+         "34,9,Spain",
+         "94,9,Sri Lanka",
+         "249,9,Sudan",
+         "597,7,Suriname",
+         "47,8,Svalbard & Jan Mayen",
+         "46,9,Sweden",
+         "41,9,Switzerland",
+         "963,9,Syrian Arab Republic"
+         ]
+},
+{
+    "T":[
+         "886,9,Taiwan",
+         "992,9,Tajikistan",
+         "255,9,Tanzania",
+         "66,9,Thailand",
+         "670,8,Timor-Leste",
+         "228,8,Togo",
+         "690,4,Tokelau",
+         "676,5,Tonga",
+         "1868,7,Trinidad & Tobago",
+         "216,8,Tunisia",
+         "90,10,Turkey",
+         "993,8,Turkmenistan",
+         "1649,7,Turks & Caicos Islands",
+         "688,5,Tuvalu"
+         ]
+},
+{
+    "U":[
+         "256,9,Uganda",
+         "380,9,Ukraine",
+         "971,9,United Arab Emirates",
+         "44,10,United Kingdom",
+         "1,10,United States",
+         "598,8,Uruguay",
+         "998,9,Uzbekistan"
+         ]
+},
+{
+    "V":[
+         "678,7,Vanuatu",
+         "58,10,Venezuela",
+         "84,10,Viet Nam",
+         "1284,7,Virgin Islands British",
+         "1340,7,Virgin Islands U.S."
+         ]
+},
+{
+    "W":[
+         "681,6,Wallis & Futuna"
+         ]
+},
+{
+    "Y":[
+         "967,9,Yemen"
+         ]
+},
+{
+    "Z":[
+         "260,9,Zambia",
+         "263,9,Zimbabwe"
+         ]
+}]

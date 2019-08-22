@@ -1,0 +1,6 @@
+framework module Pods_mahuaInjert {
+  umbrella header "Pods-mahuaInjert-umbrella.h"
+
+  export *
+  module * { export * }
+}

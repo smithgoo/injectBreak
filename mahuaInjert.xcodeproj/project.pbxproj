@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29E35B3120624C6533E76795 /* Pods_mahuaInjertDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6002E606533FA841356F08E /* Pods_mahuaInjertDylib.framework */; };
+		AA370452230D79A700153149 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA370451230D79A700153149 /* MDConfig.plist */; };
+		AA37045C230D79A700153149 /* libmahuaInjertDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA37045B230D79A700153149 /* libmahuaInjertDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA370461230D79A700153149 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA370460230D79A700153149 /* JavaScriptCore.framework */; };
+		AA370463230D79A700153149 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA370462230D79A700153149 /* Foundation.framework */; };
+		AA370465230D79A700153149 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA370464230D79A700153149 /* UIKit.framework */; };
+		AA37046A230D79A700153149 /* mahuaInjertDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA370469230D79A700153149 /* mahuaInjertDylib.mm */; };
+		AA37046D230D79A700153149 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA37046C230D79A700153149 /* MDConfigManager.h */; };
+		AA37046F230D79A700153149 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA37046E230D79A700153149 /* MDConfigManager.m */; };
+		AA370471230D79A700153149 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AA370470230D79A700153149 /* MDCycriptManager.h */; };
+		AA370473230D79A700153149 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AA370472230D79A700153149 /* MDCycriptManager.m */; };
+		AA370475230D79A700153149 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = AA370474230D79A700153149 /* MDMethodTrace.h */; };
+		AA370477230D79A700153149 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = AA370476230D79A700153149 /* MDMethodTrace.m */; };
+		AA37047A230D79A700153149 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = AA370479230D79A700153149 /* a1a2-selectortramps-arm.s */; };
+		AA37047C230D79A700153149 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = AA37047B230D79A700153149 /* a1a2-selectortramps-arm64.s */; };
+		AA37047E230D79A700153149 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = AA37047D230D79A700153149 /* a1a2-selectortramps-i386.s */; };
+		AA370480230D79A700153149 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = AA37047F230D79A700153149 /* a1a2-selectortramps-x86_64.s */; };
+		AA370482230D79A700153149 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = AA370481230D79A700153149 /* a2a3-selectortramps-arm.s */; };
+		AA370484230D79A700153149 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = AA370483230D79A700153149 /* a2a3-selectortramps-i386.s */; };
+		AA370486230D79A700153149 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = AA370485230D79A700153149 /* a2a3-selectortramps-x86_64.s */; };
+		AA370488230D79A700153149 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = AA370487230D79A700153149 /* OCMethodTrace.h */; };
+		AA37048A230D79A700153149 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = AA370489230D79A700153149 /* OCMethodTrace.m */; };
+		AA37048C230D79A700153149 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = AA37048B230D79A700153149 /* OCSelectorTrampolines.h */; };
+		AA37048E230D79A700153149 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA37048D230D79A700153149 /* OCSelectorTrampolines.mm */; };
+		AA370492230D79A700153149 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AA370491230D79A700153149 /* LLDBTools.h */; };
+		AA370494230D79A700153149 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA370493230D79A700153149 /* LLDBTools.mm */; };
+		AA370499230D79A700153149 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = AA370498230D79A700153149 /* AntiAntiDebug.m */; };
+		AA37049C230D79A700153149 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = AA37049B230D79A700153149 /* fishhook.c */; };
+		AA37049E230D79A700153149 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = AA37049D230D79A700153149 /* fishhook.h */; };
+		AA3704A0230D79A700153149 /* mahuaInjertDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = AA37049F230D79A700153149 /* mahuaInjertDylib.h */; };
+		AA3704A2230D79A700153149 /* mahuaInjertDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3704A1230D79A700153149 /* mahuaInjertDylib.m */; };
+		AA3704AC230D7C0400153149 /* jhmsdedk2060r.app in Resources */ = {isa = PBXBuildFile; fileRef = AA3704AB230D7C0400153149 /* jhmsdedk2060r.app */; };
+		F998B38092ADD4E3C5D35E03 /* Pods_mahuaInjert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E708B645A39ACCA6BB5BE8 /* Pods_mahuaInjert.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA37045D230D79A700153149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA37043F230D79A700153149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA37045A230D79A700153149;
+			remoteInfo = mahuaInjertDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA370447230D79A700153149 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA37045C230D79A700153149 /* libmahuaInjertDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		639AA348B0F279BE8D150006 /* Pods-mahuaInjert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mahuaInjert.release.xcconfig"; path = "Target Support Files/Pods-mahuaInjert/Pods-mahuaInjert.release.xcconfig"; sourceTree = "<group>"; };
+		76E708B645A39ACCA6BB5BE8 /* Pods_mahuaInjert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mahuaInjert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA37044A230D79A700153149 /* mahuaInjert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mahuaInjert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA37044D230D79A700153149 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AA37044F230D79A700153149 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		AA370451230D79A700153149 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		AA370454230D79A700153149 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		AA370455230D79A700153149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA37045B230D79A700153149 /* libmahuaInjertDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmahuaInjertDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA370460230D79A700153149 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		AA370462230D79A700153149 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA370464230D79A700153149 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA370468230D79A700153149 /* mahuaInjertDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = mahuaInjertDylib.xm; path = Logos/mahuaInjertDylib.xm; sourceTree = "<group>"; };
+		AA370469230D79A700153149 /* mahuaInjertDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = mahuaInjertDylib.mm; path = Logos/mahuaInjertDylib.mm; sourceTree = "<group>"; };
+		AA37046C230D79A700153149 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		AA37046E230D79A700153149 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		AA370470230D79A700153149 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		AA370472230D79A700153149 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		AA370474230D79A700153149 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		AA370476230D79A700153149 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		AA370479230D79A700153149 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		AA37047B230D79A700153149 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		AA37047D230D79A700153149 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		AA37047F230D79A700153149 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		AA370481230D79A700153149 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		AA370483230D79A700153149 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		AA370485230D79A700153149 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		AA370487230D79A700153149 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		AA370489230D79A700153149 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		AA37048B230D79A700153149 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		AA37048D230D79A700153149 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		AA37048F230D79A700153149 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		AA370491230D79A700153149 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		AA370493230D79A700153149 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		AA370496230D79A700153149 /* mahuaInjertDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mahuaInjertDylib-Prefix.pch"; sourceTree = "<group>"; };
+		AA370498230D79A700153149 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		AA37049B230D79A700153149 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		AA37049D230D79A700153149 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		AA37049F230D79A700153149 /* mahuaInjertDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mahuaInjertDylib.h; sourceTree = "<group>"; };
+		AA3704A1230D79A700153149 /* mahuaInjertDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mahuaInjertDylib.m; sourceTree = "<group>"; };
+		AA3704AB230D7C0400153149 /* jhmsdedk2060r.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = jhmsdedk2060r.app; sourceTree = "<group>"; };
+		AA3704AD230EDA7B00153149 /* MuHuaInjert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuHuaInjert.h; sourceTree = "<group>"; };
+		DBA6D382D32947D1AFFFF2A1 /* Pods-mahuaInjert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mahuaInjert.debug.xcconfig"; path = "Target Support Files/Pods-mahuaInjert/Pods-mahuaInjert.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0AF78BF3B0031741E9F129 /* Pods-mahuaInjertDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mahuaInjertDylib.release.xcconfig"; path = "Target Support Files/Pods-mahuaInjertDylib/Pods-mahuaInjertDylib.release.xcconfig"; sourceTree = "<group>"; };
+		F6002E606533FA841356F08E /* Pods_mahuaInjertDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mahuaInjertDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BB4106907A198E2732F441 /* Pods-mahuaInjertDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mahuaInjertDylib.debug.xcconfig"; path = "Target Support Files/Pods-mahuaInjertDylib/Pods-mahuaInjertDylib.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA370444230D79A700153149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F998B38092ADD4E3C5D35E03 /* Pods_mahuaInjert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA370458230D79A700153149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA370461230D79A700153149 /* JavaScriptCore.framework in Frameworks */,
+				AA370465230D79A700153149 /* UIKit.framework in Frameworks */,
+				AA370463230D79A700153149 /* Foundation.framework in Frameworks */,
+				29E35B3120624C6533E76795 /* Pods_mahuaInjertDylib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA37043E230D79A700153149 = {
+			isa = PBXGroup;
+			children = (
+				AA37044C230D79A700153149 /* mahuaInjert */,
+				AA370466230D79A700153149 /* mahuaInjertDylib */,
+				AA37045F230D79A700153149 /* Frameworks */,
+				AA37044B230D79A700153149 /* Products */,
+				D504CCFA060DBD8F9501E975 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AA37044B230D79A700153149 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA37044A230D79A700153149 /* mahuaInjert.app */,
+				AA37045B230D79A700153149 /* libmahuaInjertDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA37044C230D79A700153149 /* mahuaInjert */ = {
+			isa = PBXGroup;
+			children = (
+				AA37044D230D79A700153149 /* icon.png */,
+				AA370455230D79A700153149 /* Info.plist */,
+				AA37044E230D79A700153149 /* Scripts */,
+				AA370450230D79A700153149 /* Config */,
+				AA370453230D79A700153149 /* TargetApp */,
+			);
+			path = mahuaInjert;
+			sourceTree = "<group>";
+		};
+		AA37044E230D79A700153149 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				AA37044F230D79A700153149 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		AA370450230D79A700153149 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AA370451230D79A700153149 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		AA370453230D79A700153149 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA3704AB230D7C0400153149 /* jhmsdedk2060r.app */,
+				AA370454230D79A700153149 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		AA37045F230D79A700153149 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA370460230D79A700153149 /* JavaScriptCore.framework */,
+				AA370462230D79A700153149 /* Foundation.framework */,
+				AA370464230D79A700153149 /* UIKit.framework */,
+				76E708B645A39ACCA6BB5BE8 /* Pods_mahuaInjert.framework */,
+				F6002E606533FA841356F08E /* Pods_mahuaInjertDylib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA370466230D79A700153149 /* mahuaInjertDylib */ = {
+			isa = PBXGroup;
+			children = (
+				AA37049F230D79A700153149 /* mahuaInjertDylib.h */,
+				AA3704A1230D79A700153149 /* mahuaInjertDylib.m */,
+				AA370467230D79A700153149 /* Logos */,
+				AA37046B230D79A700153149 /* Config */,
+				AA370478230D79A700153149 /* Trace */,
+				AA370490230D79A700153149 /* Tools */,
+				AA370497230D79A700153149 /* AntiAntiDebug */,
+				AA37049A230D79A700153149 /* fishhook */,
+				AA370495230D79A700153149 /* Supporting Files */,
+			);
+			path = mahuaInjertDylib;
+			sourceTree = "<group>";
+		};
+		AA370467230D79A700153149 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				AA370468230D79A700153149 /* mahuaInjertDylib.xm */,
+				AA370469230D79A700153149 /* mahuaInjertDylib.mm */,
+				AA3704AD230EDA7B00153149 /* MuHuaInjert.h */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		AA37046B230D79A700153149 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AA37046C230D79A700153149 /* MDConfigManager.h */,
+				AA37046E230D79A700153149 /* MDConfigManager.m */,
+				AA370470230D79A700153149 /* MDCycriptManager.h */,
+				AA370472230D79A700153149 /* MDCycriptManager.m */,
+				AA370474230D79A700153149 /* MDMethodTrace.h */,
+				AA370476230D79A700153149 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		AA370478230D79A700153149 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				AA370479230D79A700153149 /* a1a2-selectortramps-arm.s */,
+				AA37047B230D79A700153149 /* a1a2-selectortramps-arm64.s */,
+				AA37047D230D79A700153149 /* a1a2-selectortramps-i386.s */,
+				AA37047F230D79A700153149 /* a1a2-selectortramps-x86_64.s */,
+				AA370481230D79A700153149 /* a2a3-selectortramps-arm.s */,
+				AA370483230D79A700153149 /* a2a3-selectortramps-i386.s */,
+				AA370485230D79A700153149 /* a2a3-selectortramps-x86_64.s */,
+				AA370487230D79A700153149 /* OCMethodTrace.h */,
+				AA370489230D79A700153149 /* OCMethodTrace.m */,
+				AA37048B230D79A700153149 /* OCSelectorTrampolines.h */,
+				AA37048D230D79A700153149 /* OCSelectorTrampolines.mm */,
+				AA37048F230D79A700153149 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		AA370490230D79A700153149 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				AA370491230D79A700153149 /* LLDBTools.h */,
+				AA370493230D79A700153149 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		AA370495230D79A700153149 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA370496230D79A700153149 /* mahuaInjertDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA370497230D79A700153149 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				AA370498230D79A700153149 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		AA37049A230D79A700153149 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				AA37049B230D79A700153149 /* fishhook.c */,
+				AA37049D230D79A700153149 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		D504CCFA060DBD8F9501E975 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBA6D382D32947D1AFFFF2A1 /* Pods-mahuaInjert.debug.xcconfig */,
+				639AA348B0F279BE8D150006 /* Pods-mahuaInjert.release.xcconfig */,
+				F8BB4106907A198E2732F441 /* Pods-mahuaInjertDylib.debug.xcconfig */,
+				EF0AF78BF3B0031741E9F129 /* Pods-mahuaInjertDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA370459230D79A700153149 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA370471230D79A700153149 /* MDCycriptManager.h in Headers */,
+				AA370475230D79A700153149 /* MDMethodTrace.h in Headers */,
+				AA37049E230D79A700153149 /* fishhook.h in Headers */,
+				AA370492230D79A700153149 /* LLDBTools.h in Headers */,
+				AA3704A0230D79A700153149 /* mahuaInjertDylib.h in Headers */,
+				AA37046D230D79A700153149 /* MDConfigManager.h in Headers */,
+				AA37048C230D79A700153149 /* OCSelectorTrampolines.h in Headers */,
+				AA370488230D79A700153149 /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA370449230D79A700153149 /* mahuaInjert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3704A8230D79A700153149 /* Build configuration list for PBXNativeTarget "mahuaInjert" */;
+			buildPhases = (
+				3EA3CCECBBF11CA695D77A65 /* [CP] Check Pods Manifest.lock */,
+				AA370443230D79A700153149 /* Sources */,
+				AA370444230D79A700153149 /* Frameworks */,
+				AA370445230D79A700153149 /* ShellScript */,
+				AA370446230D79A700153149 /* Resources */,
+				AA370447230D79A700153149 /* CopyFiles */,
+				AA370448230D79A700153149 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA37045E230D79A700153149 /* PBXTargetDependency */,
+			);
+			name = mahuaInjert;
+			productName = mahuaInjert;
+			productReference = AA37044A230D79A700153149 /* mahuaInjert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA37045A230D79A700153149 /* mahuaInjertDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3704A5230D79A700153149 /* Build configuration list for PBXNativeTarget "mahuaInjertDylib" */;
+			buildPhases = (
+				674CA5CFE54266CB84316FEE /* [CP] Check Pods Manifest.lock */,
+				AA370456230D79A700153149 /* ShellScript */,
+				AA370457230D79A700153149 /* Sources */,
+				AA370458230D79A700153149 /* Frameworks */,
+				AA370459230D79A700153149 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mahuaInjertDylib;
+			productName = mahuaInjertDylib;
+			productReference = AA37045B230D79A700153149 /* libmahuaInjertDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA37043F230D79A700153149 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "王朋";
+				TargetAttributes = {
+					AA370449230D79A700153149 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					AA37045A230D79A700153149 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = AA370442230D79A700153149 /* Build configuration list for PBXProject "mahuaInjert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA37043E230D79A700153149;
+			productRefGroup = AA37044B230D79A700153149 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA370449230D79A700153149 /* mahuaInjert */,
+				AA37045A230D79A700153149 /* mahuaInjertDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA370446230D79A700153149 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3704AC230D7C0400153149 /* jhmsdedk2060r.app in Resources */,
+				AA370452230D79A700153149 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EA3CCECBBF11CA695D77A65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mahuaInjert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		674CA5CFE54266CB84316FEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mahuaInjertDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA370445230D79A700153149 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		AA370448230D79A700153149 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		AA370456230D79A700153149 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA370443230D79A700153149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA370457230D79A700153149 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA370473230D79A700153149 /* MDCycriptManager.m in Sources */,
+				AA37047C230D79A700153149 /* a1a2-selectortramps-arm64.s in Sources */,
+				AA37047A230D79A700153149 /* a1a2-selectortramps-arm.s in Sources */,
+				AA370480230D79A700153149 /* a1a2-selectortramps-x86_64.s in Sources */,
+				AA37048A230D79A700153149 /* OCMethodTrace.m in Sources */,
+				AA37046F230D79A700153149 /* MDConfigManager.m in Sources */,
+				AA37049C230D79A700153149 /* fishhook.c in Sources */,
+				AA3704A2230D79A700153149 /* mahuaInjertDylib.m in Sources */,
+				AA370499230D79A700153149 /* AntiAntiDebug.m in Sources */,
+				AA37048E230D79A700153149 /* OCSelectorTrampolines.mm in Sources */,
+				AA37047E230D79A700153149 /* a1a2-selectortramps-i386.s in Sources */,
+				AA370484230D79A700153149 /* a2a3-selectortramps-i386.s in Sources */,
+				AA370482230D79A700153149 /* a2a3-selectortramps-arm.s in Sources */,
+				AA37046A230D79A700153149 /* mahuaInjertDylib.mm in Sources */,
+				AA370494230D79A700153149 /* LLDBTools.mm in Sources */,
+				AA370486230D79A700153149 /* a2a3-selectortramps-x86_64.s in Sources */,
+				AA370477230D79A700153149 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA37045E230D79A700153149 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA37045A230D79A700153149 /* mahuaInjertDylib */;
+			targetProxy = AA37045D230D79A700153149 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA3704A3230D79A700153149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA3704A4230D79A700153149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA3704A6230D79A700153149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BB4106907A198E2732F441 /* Pods-mahuaInjertDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U96Y6G4AUX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mahuaInjertDylib/mahuaInjertDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libmahuaInjertDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"mahuaInjertDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		AA3704A7230D79A700153149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0AF78BF3B0031741E9F129 /* Pods-mahuaInjertDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = U96Y6G4AUX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mahuaInjertDylib/mahuaInjertDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libmahuaInjertDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"mahuaInjertDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA3704A9230D79A700153149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBA6D382D32947D1AFFFF2A1 /* Pods-mahuaInjert.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U96Y6G4AUX;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = mahuaInjert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.mahuaInjert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Debug;
+		};
+		AA3704AA230D79A700153149 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639AA348B0F279BE8D150006 /* Pods-mahuaInjert.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U96Y6G4AUX;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = mahuaInjert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.mahuaInjert";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA370442230D79A700153149 /* Build configuration list for PBXProject "mahuaInjert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3704A3230D79A700153149 /* Debug */,
+				AA3704A4230D79A700153149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3704A5230D79A700153149 /* Build configuration list for PBXNativeTarget "mahuaInjertDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3704A6230D79A700153149 /* Debug */,
+				AA3704A7230D79A700153149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3704A8230D79A700153149 /* Build configuration list for PBXNativeTarget "mahuaInjert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3704A9230D79A700153149 /* Debug */,
+				AA3704AA230D79A700153149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA37043F230D79A700153149 /* Project object */;
+}
