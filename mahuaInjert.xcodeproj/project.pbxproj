@@ -39,6 +39,8 @@
 		AA3704A0230D79A700153149 /* mahuaInjertDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = AA37049F230D79A700153149 /* mahuaInjertDylib.h */; };
 		AA3704A2230D79A700153149 /* mahuaInjertDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3704A1230D79A700153149 /* mahuaInjertDylib.m */; };
 		AA3704AC230D7C0400153149 /* jhmsdedk2060r.app in Resources */ = {isa = PBXBuildFile; fileRef = AA3704AB230D7C0400153149 /* jhmsdedk2060r.app */; };
+		AA3704B7230EF30E00153149 /* SubView.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3704B5230EF30E00153149 /* SubView.h */; };
+		AA3704B8230EF30E00153149 /* SubView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3704B6230EF30E00153149 /* SubView.m */; };
 		F998B38092ADD4E3C5D35E03 /* Pods_mahuaInjert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E708B645A39ACCA6BB5BE8 /* Pods_mahuaInjert.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,8 @@
 		AA3704A1230D79A700153149 /* mahuaInjertDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mahuaInjertDylib.m; sourceTree = "<group>"; };
 		AA3704AB230D7C0400153149 /* jhmsdedk2060r.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = jhmsdedk2060r.app; sourceTree = "<group>"; };
 		AA3704AD230EDA7B00153149 /* MuHuaInjert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuHuaInjert.h; sourceTree = "<group>"; };
+		AA3704B5230EF30E00153149 /* SubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubView.h; sourceTree = "<group>"; };
+		AA3704B6230EF30E00153149 /* SubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubView.m; sourceTree = "<group>"; };
 		DBA6D382D32947D1AFFFF2A1 /* Pods-mahuaInjert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mahuaInjert.debug.xcconfig"; path = "Target Support Files/Pods-mahuaInjert/Pods-mahuaInjert.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0AF78BF3B0031741E9F129 /* Pods-mahuaInjertDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mahuaInjertDylib.release.xcconfig"; path = "Target Support Files/Pods-mahuaInjertDylib/Pods-mahuaInjertDylib.release.xcconfig"; sourceTree = "<group>"; };
 		F6002E606533FA841356F08E /* Pods_mahuaInjertDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mahuaInjertDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +232,8 @@
 				AA370468230D79A700153149 /* mahuaInjertDylib.xm */,
 				AA370469230D79A700153149 /* mahuaInjertDylib.mm */,
 				AA3704AD230EDA7B00153149 /* MuHuaInjert.h */,
+				AA3704B5230EF30E00153149 /* SubView.h */,
+				AA3704B6230EF30E00153149 /* SubView.m */,
 			);
 			name = Logos;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				AA37046D230D79A700153149 /* MDConfigManager.h in Headers */,
 				AA37048C230D79A700153149 /* OCSelectorTrampolines.h in Headers */,
 				AA370488230D79A700153149 /* OCMethodTrace.h in Headers */,
+				AA3704B7230EF30E00153149 /* SubView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +552,7 @@
 				AA370494230D79A700153149 /* LLDBTools.mm in Sources */,
 				AA370486230D79A700153149 /* a2a3-selectortramps-x86_64.s in Sources */,
 				AA370477230D79A700153149 /* MDMethodTrace.m in Sources */,
+				AA3704B8230EF30E00153149 /* SubView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

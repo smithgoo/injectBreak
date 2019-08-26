@@ -1,18 +1,79 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - CocoaLumberjack (3.5.3):
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
+  - FLAnimatedImage (1.0.12)
+  - KPengUtils (0.0.1):
+    - AFNetworking (~> 3.1.0)
+    - KPengUtils/KPengCategories (= 0.0.1)
+    - KPengUtils/KPengcodeView (= 0.0.1)
+    - KPengUtils/KPengCountDown (= 0.0.1)
+    - KPengUtils/KPengm3u8PlayandDown (= 0.0.1)
+    - KPengUtils/KPengNormal (= 0.0.1)
+    - KPengUtils/KPengPaintView (= 0.0.1)
+    - KPengUtils/KPengSongwords (= 0.0.1)
+  - KPengUtils/KPengCategories (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - KPengUtils/KPengcodeView (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - KPengUtils/KPengCountDown (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - KPengUtils/KPengm3u8PlayandDown (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - KPengUtils/KPengNormal (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - KPengUtils/KPengPaintView (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - KPengUtils/KPengSongwords (0.0.1):
+    - AFNetworking (~> 3.1.0)
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
 
 DEPENDENCIES:
   - CocoaLumberjack (~> 3.5.3)
+  - FLAnimatedImage (~> 1.0.12)
+  - KPengUtils (from `https://github.com/smithgoo/KPengUtils.git`)
+  - SDWebImage (~> 5.1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - CocoaLumberjack
+    - FLAnimatedImage
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  KPengUtils:
+    :git: https://github.com/smithgoo/KPengUtils.git
+
+CHECKOUT OPTIONS:
+  KPengUtils:
+    :commit: 01c0dcaf41fb8b8f9fc0282274b44bc3b7dec7d6
+    :git: https://github.com/smithgoo/KPengUtils.git
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  KPengUtils: eaa7e0f3ca706c05d70ea98dd3a5832b66f69f29
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
 
-PODFILE CHECKSUM: 6426b14e7fd126c4b417406b0d96af3fed8e964c
+PODFILE CHECKSUM: 730738edba2c645c55f5c662d6a0904019a6cef2
 
 COCOAPODS: 1.7.5

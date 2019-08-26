@@ -1,0 +1,6 @@
+framework module KPengUtils {
+  umbrella header "KPengUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

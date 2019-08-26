@@ -15,4 +15,7 @@ target 'mahuaInjertDylib' do
 
   # Pods for mahuaInjertDylib
    pod 'CocoaLumberjack', '~> 3.5.3'
+   pod 'FLAnimatedImage', '~> 1.0.12'
+   pod 'SDWebImage', '~> 5.1.0'
+   pod 'KPengUtils',:git=>'https://github.com/smithgoo/KPengUtils.git'
 end
