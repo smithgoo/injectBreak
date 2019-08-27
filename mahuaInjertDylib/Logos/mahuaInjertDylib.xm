@@ -3,6 +3,7 @@
 #import <UIKit/UIKit.h>
 #import "MuHuaInjert.h"
 #import "ConfigInfo.h"
+#import "SubView.h"
 
 
 %hook  AppDelegate
@@ -21,22 +22,28 @@ return %orig;
 %hook  MahuaADView
 - (void)setupLanchImageV {
 %orig;
-[self performSelector:@selector(getNewLaunchMethod) withObject:nil  afterDelay:0];
-UIButton *btn =[UIButton new];
-btn.frame =CGRectMake(0, 0, self.jumpBtn.frame.size.width, self.jumpBtn.frame.size.height);
-[self.jumpBtn addSubview:btn];
-[btn addTarget:self action:@selector(dissMissAction) forControlEvents:UIControlEventTouchUpInside];
+for (UIView *x in self.subviews) {
+[x removeFromSuperview];
+}
+ 
+SubView *subV =[[SubView alloc] initWithFrame:self.frame];
+[self addSubview:subV];
+subV.adClickCallBack = ^{
+[self performSelector:@selector(dissMissAction) withObject:nil  afterDelay:0];
+};
+//[self performSelector:@selector(getNewLaunchMethod) withObject:nil  afterDelay:0];
+
 }
 
-- (void)getLunchCache {
-%orig;
-[self performSelector:@selector(getNewLaunchMethod) withObject:nil  afterDelay:0];
+//- (void)getLunchCache {
+//%orig;
+//[self performSelector:@selector(getNewLaunchMethod) withObject:nil  afterDelay:0];
 
-}
+//}
 
 - (void)addJumpBtn {
 %orig;
-
+[self.jumpBtn removeFromSuperview];
 
 }
 
@@ -48,17 +55,16 @@ btn.frame =CGRectMake(0, 0, self.jumpBtn.frame.size.width, self.jumpBtn.frame.si
 
 
 //原生app 没这个方法只能用perform 方式调用 不能用self self 不具备这个方法
-%new
-- (void)getNewLaunchMethod {
-[self.lanchImageView sd_setImageWithURL:[NSURL URLWithString:@"https://www.baidu.com/img/bd_logo1.png"]];
+//%new
+//- (void)getNewLaunchMethod {
+//[self.lanchImageView sd_setImageWithURL:[NSURL URLWithString:@"https://www.baidu.com/img/bd_logo1.png"]];
 
-}
+//}
 
 
 
 //广告点击跳转
 - (void)touchesBegan:(id)arg1 withEvent:(id)arg2 {
-[self performSelector:@selector(dissMissAction) withObject:nil  afterDelay:0];
 
 NSLog(@"点击了广告1");
 }

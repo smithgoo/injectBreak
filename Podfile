@@ -18,4 +18,5 @@ target 'mahuaInjertDylib' do
    pod 'FLAnimatedImage', '~> 1.0.12'
    pod 'SDWebImage', '~> 5.1.0'
    pod 'KPengUtils',:git=>'https://github.com/smithgoo/KPengUtils.git'
+   pod 'JKCountDownButton', '~> 1.3.0'
 end

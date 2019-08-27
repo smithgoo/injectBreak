@@ -18,6 +18,7 @@ PODS:
     - CocoaLumberjack/Core (= 3.5.3)
   - CocoaLumberjack/Core (3.5.3)
   - FLAnimatedImage (1.0.12)
+  - JKCountDownButton (1.3.0)
   - KPengUtils (0.0.1):
     - AFNetworking (~> 3.1.0)
     - KPengUtils/KPengCategories (= 0.0.1)
@@ -48,6 +49,7 @@ PODS:
 DEPENDENCIES:
   - CocoaLumberjack (~> 3.5.3)
   - FLAnimatedImage (~> 1.0.12)
+  - JKCountDownButton (~> 1.3.0)
   - KPengUtils (from `https://github.com/smithgoo/KPengUtils.git`)
   - SDWebImage (~> 5.1.0)
 
@@ -56,6 +58,7 @@ SPEC REPOS:
     - AFNetworking
     - CocoaLumberjack
     - FLAnimatedImage
+    - JKCountDownButton
     - SDWebImage
 
 EXTERNAL SOURCES:
@@ -71,9 +74,10 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  JKCountDownButton: 3b557e75d23e7243bb63c8130e6d12d8510468dd
   KPengUtils: eaa7e0f3ca706c05d70ea98dd3a5832b66f69f29
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
 
-PODFILE CHECKSUM: 730738edba2c645c55f5c662d6a0904019a6cef2
+PODFILE CHECKSUM: e93b23bbf824b8073cd99987b8420b29fc8c72d8
 
 COCOAPODS: 1.7.5
