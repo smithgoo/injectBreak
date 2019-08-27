@@ -4,15 +4,40 @@
 #import "MuHuaInjert.h"
 #import "ConfigInfo.h"
 #import "SubView.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 
 %hook  AppDelegate
 - (_Bool)application:(id)arg1 didFinishLaunchingWithOptions:(id)arg2 {
 [ConfigInfo initialize];
 
+//[self performSelector:@selector(openLog) withObject:nil  afterDelay:5];
 return %orig;
 
 }
+
+
+%new
+- (void)openLog {
+[DDLog addLogger:[DDTTYLogger sharedInstance]];
+// TTY = Xcode 控制台
+//[DDLog addLogger:[DDASLLogger sharedInstance]];
+// ASL = Apple System Logs 苹果系统日志
+
+DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // 本地文件日志
+fileLogger.rollingFrequency = 60 * 60 * 24; // 每24小时创建一个新文件
+fileLogger.logFileManager.maximumNumberOfLogFiles = 7; // 最多允许创建7个文件
+[DDLog addLogger:fileLogger];
+
+NSLog(@"123");
+//DDLogVerbose(@"Verbose");
+//DDLogDebug(@"Debug");
+//DDLogInfo(@"Info");
+//DDLogWarn(@"⚠️");
+//DDLogError(@"Error");
+}
+
+
 %end
 
 
@@ -25,7 +50,7 @@ return %orig;
 for (UIView *x in self.subviews) {
 [x removeFromSuperview];
 }
- 
+
 SubView *subV =[[SubView alloc] initWithFrame:self.frame];
 [self addSubview:subV];
 subV.adClickCallBack = ^{
@@ -66,7 +91,7 @@ subV.adClickCallBack = ^{
 //广告点击跳转
 - (void)touchesBegan:(id)arg1 withEvent:(id)arg2 {
 
-NSLog(@"点击了广告1");
+  NSLog(@"点击了广告1");
 }
 %end
 

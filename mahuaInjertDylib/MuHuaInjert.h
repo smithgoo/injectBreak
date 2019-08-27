@@ -28,6 +28,23 @@
 
 @end
 
+//基类控制器
+@interface WMPageController : UIViewController
+
+@end
+
+//首页
+@interface MahuaRecommadNewNewViewController : WMPageController
+
+
+@end
+
+
+
+
+
+
+
 // 启动广告位
 @interface MahuaADView : UIView
 @property(retain, nonatomic) FLAnimatedImageView *lanchImageView; // @synthesize lanchImageView=_lanchImageView;
