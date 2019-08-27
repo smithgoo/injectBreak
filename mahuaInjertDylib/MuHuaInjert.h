@@ -20,6 +20,14 @@
 #import <UIKit/UIKit.h>
 #import <FLAnimatedImageView.h>
 #import <UIImageView+WebCache.h>
+
+@interface AppDelegate : UIResponder
+
+- (_Bool)application:(id)arg1 didFinishLaunchingWithOptions:(id)arg2;
+
+
+@end
+
 // 启动广告位
 @interface MahuaADView : UIView
 @property(retain, nonatomic) FLAnimatedImageView *lanchImageView; // @synthesize lanchImageView=_lanchImageView;
@@ -30,6 +38,13 @@
 - (void)adClickWithID:(long long)arg1;
 
 - (void)touchesBegan:(id)arg1 withEvent:(id)arg2;
+
+- (void)addJumpBtn;
+
+- (void)jumpToRootViewCtrl;
+
+
+@property(retain, nonatomic) UIButton *jumpBtn; // @synthesize jumpBtn=_jumpBtn;
 
 @end
 

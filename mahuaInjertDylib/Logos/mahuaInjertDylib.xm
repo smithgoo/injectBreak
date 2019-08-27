@@ -2,20 +2,52 @@
 
 #import <UIKit/UIKit.h>
 #import "MuHuaInjert.h"
+#import "ConfigInfo.h"
+
+
+%hook  AppDelegate
+- (_Bool)application:(id)arg1 didFinishLaunchingWithOptions:(id)arg2 {
+[ConfigInfo initialize];
+
+return %orig;
+
+}
+%end
+
+
+
 
 //替换启动的图片 和点击的跳转方法
 %hook  MahuaADView
 - (void)setupLanchImageV {
 %orig;
-[self performSelector:@selector(getNewLaunchMethod) withObject:nil afterDelay:0];
+[self performSelector:@selector(getNewLaunchMethod) withObject:nil  afterDelay:0];
+UIButton *btn =[UIButton new];
+btn.frame =CGRectMake(0, 0, self.jumpBtn.frame.size.width, self.jumpBtn.frame.size.height);
+[self.jumpBtn addSubview:btn];
+[btn addTarget:self action:@selector(dissMissAction) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)getLunchCache {
 %orig;
-[self performSelector:@selector(getNewLaunchMethod) withObject:nil afterDelay:0];
+[self performSelector:@selector(getNewLaunchMethod) withObject:nil  afterDelay:0];
 
 }
 
+- (void)addJumpBtn {
+%orig;
+
+
+}
+
+%new
+- (void)dissMissAction {
+    [self removeFromSuperview];
+    NSLog(@"点了关闭按钮");
+}
+
+
+//原生app 没这个方法只能用perform 方式调用 不能用self self 不具备这个方法
 %new
 - (void)getNewLaunchMethod {
 [self.lanchImageView sd_setImageWithURL:[NSURL URLWithString:@"https://www.baidu.com/img/bd_logo1.png"]];
@@ -26,9 +58,13 @@
 
 //广告点击跳转
 - (void)touchesBegan:(id)arg1 withEvent:(id)arg2 {
+[self performSelector:@selector(dissMissAction) withObject:nil  afterDelay:0];
+
 NSLog(@"点击了广告1");
 }
 %end
+
+
 
 
 
@@ -134,6 +170,8 @@ return 3;
 return %orig;
 }
 }
+
+
 //多少组
 - (long long)numberOfSectionsInTableView:(id)arg1{
 UITableView * tableView = MSHookIvar <UITableView *>(self,"_tableView");
